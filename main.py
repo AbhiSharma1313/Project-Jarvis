@@ -40,7 +40,7 @@ def processcommand(c):
         webbrowser.open(link)
 
     elif "tell news" in c.lower():
-        r = requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=8173b52ea32d465ba881458852d60f8c")
+        r = requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR-API-KEY")
         if r.status_code == 200:
             data = r.json()   # Convert response to dictionary
     
