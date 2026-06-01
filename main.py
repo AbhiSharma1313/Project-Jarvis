@@ -53,7 +53,7 @@ def processcommand(c):
     else:
         #Gemini will handle the request
         output =aiprocess(c)
-        print(output)    #It will also write the output
+        print(output)    
         speak(output)
        
     
