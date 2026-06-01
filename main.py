@@ -53,7 +53,7 @@ def processcommand(c):
     else:
         #Gemini will handle the request
         output =aiprocess(c)
-        print(output)
+        print(output)    #It will also write the output
         speak(output)
        
     
@@ -79,6 +79,8 @@ if __name__== "__main__":
             word = r.recognize_google(audio)        
             if(word.lower()== "jarvis"):
                 speak("Yes Boss")
+                print("Yes Boss")  #It will also write the command
+
                 
 
                 #Listen for command
